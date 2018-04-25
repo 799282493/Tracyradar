@@ -2,7 +2,7 @@
 echo "一键搭建pubgk雷达"
 echo "你的内网ip" 
 read -p "内网ip： " ip
-cp /root/winnerpubg/restart.sh /root/restart.sh
+cp /root/pubgkradar/restart.sh /root/restart.sh
 chmod +x restart.sh
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
