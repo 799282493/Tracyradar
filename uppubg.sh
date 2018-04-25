@@ -29,6 +29,8 @@ git clone https://github.com/799282493/Tracyradar.git
 cd Tracyradar/
 npm i
 npm i -g pino
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+sudo ldconfig
 npm install -g forever
 forever start index.js sniff eth0 $ip | pino
 
