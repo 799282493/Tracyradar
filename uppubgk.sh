@@ -1,8 +1,8 @@
 #!/bin/bash
-echo "一键搭建pubgk雷达"
+echo "一键搭建雷达"
 echo "你的内网ip" 
 read -p "内网ip： " ip
-cp /root/pubgkradar/restart.sh /root/restart.sh
+cp /root/Tracyradar/restart.sh /root/restart.sh
 chmod +x restart.sh
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
@@ -25,8 +25,8 @@ cd libpcap-1.8.1
 make
 make install
 
-git clone https://github.com/hezkun/pubgkradar.git
-cd pubgkradar/
+git clone https://github.com/799282493/Tracyradar.git
+cd Tracyradar/
 npm i
 npm i -g pino
 npm install -g forever
